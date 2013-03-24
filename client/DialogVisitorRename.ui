@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiDialogVisitorRename</class>
+ <widget class="QDialog" name="uiDialogVisitorRename">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>264</width>
+    <height>126</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string comment="LBL_DLG_RENAME_VISITOR_TITLE">Rename visitor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="lh3.qrc">
+    <normaloff>:/lh3/Resources/lh_icon.png</normaloff>:/lh3/Resources/lh_icon.png</iconset>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string comment="LBL_DLG_RENAME_VISITOR_MEMO1">Specify a name for the selected visitor</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string comment="LBL_DLG_RENAME_VISITOR_SET">Set</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string comment="LBL_CANCEL">Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="lh3.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorRename</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>17</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorRename</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

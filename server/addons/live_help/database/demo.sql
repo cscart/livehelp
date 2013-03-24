@@ -1,0 +1,1 @@
+REPLACE INTO `?:lh_operators` (operator_id, name, login, password, obsolete_time, status, register_time, type_notify, last_message) VALUES (1,'Demo operator','demo','fe01ce2a7fbac8fafaed7c982a04e229',1241595366,'A',1161672204,'N',1518);

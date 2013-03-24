@@ -1,0 +1,351 @@
+[Information]
+LanguageName=English
+
+[Labels]
+; Common
+LBL_YES=Yes
+LBL_NO=No
+LBL_CLOSE=Close
+LBL_APPLY=Apply
+LBL_CANCEL=Cancel
+LBL_ASSIGN=Assign
+LBL_REMOVE=Remove
+LBL_CREATE=Create
+LBL_ADD=Add
+LBL_DELETE=Delete
+LBL_VIEW=View
+LBL_SEND=Send
+LBL_CLEAR_ALL=Clear All
+LBL_LATEST=Latest
+LBL_PREVIOUS=Previous
+LBL_NEXT=Next
+LBL_SEARCH=Search
+LBL_UPLOAD=Upload
+
+LBL_TITLE=Title
+LBL_DATE=Date
+LBL_OPERATOR=Operator
+LBL_SUBJECT=Subject
+LBL_VISITOR=Visitor
+LBL_NAME=Name
+LBL_TEXT=Text
+LBL_EVENT=Event
+LBL_AUTHOR=Author
+LBL_STATE_STATE=State
+LBL_SIZE=Size
+LBL_FILENAME=Filename
+LBL_UPDATING="Updating..."
+
+LBL_COPY="Copy"
+
+;
+; Statuses
+;
+LBL_STATUS_IDLE=Idle
+LBL_STATUS_WAITING_CHAT=Waiting for chat
+LBL_STATUS_CHATTING=Chatting
+LBL_STATUS_INVITATION_SENT=Invitation sent
+LBL_STATUS_INVITATION_DECLINET=Invitation declined
+
+
+; Actions
+LBL_MENU_FILE=File
+LBL_ACTION_CONNECT=Connect
+LBL_ACTION_DISCONNECT=Disconnect
+LBL_ACTION_EXIT=Exit
+
+LBL_MENU_VIEW=View
+LBL_ACTION_VISITORS=Visitors
+LBL_ACTION_WINDOWS=Windows
+LBL_ACTION_OFFLINE_MESSAGES=Offline messages
+LBL_ACTION_STICKERS=Stickers
+LBL_ACTION_SETTINGS=Settings
+
+LBL_MENU_WINDOW=Window
+LBL_ACTION_CASCADE=Cascade
+LBL_ACTION_TILE=Tile
+LBL_ACTION_CLOSE_ALL=Close All
+LBL_ACTION_CLOSE_ACTIVE=Close Active
+
+LBL_MENU_HELP=Help
+LBL_ACTION_ABOUT=About Live Help
+
+LBL_ACTION_OPEN_VISITOR=Open Visitor
+LBL_ACTION_ASSIGN_NAME=Assign Visitor Name
+LBL_ACTION_RESTORE=Restore
+
+;
+; Dockers
+;
+LBL_DOCK_VISITORS_TITLE=Visitors
+LBL_DOCK_OFFLINE_MESSAGES_TITLE=Offline Messages
+LBL_DOCK_STICKERS_TITLE=Stickers
+LBL_DOCK_WINDOWS_TITLE=Windows
+
+;
+; dialog About
+;
+LBL_DLG_ABOUT_TITLE=About Live Help 3.0
+
+;
+; dialog Connection
+;
+LBL_DLG_CONNECT_TITLE=Connect to store
+LBL_DLG_CONNECT_INFORMATION=Input your login and password to connect
+LBL_DLG_CONNECT_LOGIN=Login
+LBL_DLG_CONNECT_PASSWORD=Password
+LBL_DLG_CONNECT_STORE=Store
+LBL_DLG_CONNECT_CONNECT=Connect
+LBL_DLG_CONNECT_CANCEL=Cancel
+
+
+;
+; dialog Settings
+;
+LBL_DLG_SETTINGS_TITLE=Settings
+
+; Connection
+LBL_DLG_SETTINGS_NAV_CONNECTION=Connection
+LBL_DLG_SETTINGS_CONN_CONNECTION=Connection
+LBL_DLG_SETTINGS_CONN_STORE_URL=Store URL
+LBL_DLG_SETTINGS_CONN_LABEL1=* Specify the URL to your installed store in the following form:\nhttp://server:port/path/index.php
+LBL_DLG_SETTINGS_CONN_STORE_ALIAS=Store alias
+LBL_DLG_SETTINGS_CONN_HTTP_AUTH=HTTP Authentication
+LBL_DLG_SETTINGS_CONN_HTTP_NAME=User
+LBL_DLG_SETTINGS_CONN_HTTP_PASS=Password
+LBL_DLG_SETTINGS_CONN_PROXY=Proxy
+LBL_DLG_SETTINGS_CONN_ADDR=HTTP Proxy
+LBL_DLG_SETTINGS_CONN_PORT=Port
+LBL_DLG_SETTINGS_CONN_USER=User
+LBL_DLG_SETTINGS_CONN_PASS=Password
+LBL_DLG_SETTINGS_CONN_ADD=Add Connection
+LBL_DLG_SETTINGS_CONN_DELETE=Delete Connection
+LBL_DLG_SETTINGS_CONN_TEST=Test Connection
+
+; Preset messages
+LBL_DLG_SETTINGS_NAV_PRESET_MSGS=Preset Messages
+LBL_DLG_SETTINGS_PRE_ADD=Add
+LBL_DLG_SETTINGS_PRE_DEL=Delete
+LBL_DLG_SETTINGS_PRE_MEMO1=You can use special words:
+LBL_DLG_SETTINGS_PRE_MEMO2=[%NAME%] - visitor's name
+LBL_DLG_SETTINGS_PRE_MEMO3=[%DATE%] - current date
+LBL_DLG_SETTINGS_PRE_MEMO4=[%TIME%] - current time
+
+; History
+LBL_DLG_SETTINGS_NAV_HISTORY=History
+LBL_DLG_SETTINGS_HISTORY=History
+LBL_DLG_SETTINGS_HIST_MEMO1="History keeping time (in days):"
+LBL_DLG_SETTINGS_HIST_MEMO2="* Set to 0 to disable history cleaning"
+LBL_DLG_SETTINGS_HIST_MEMO3="Click the button below to clear all messages from the history:"
+LBL_DLG_SETTINGS_HIST_CLEAR=Clear all history
+
+; Colors & Settings
+LBL_DLG_SETTINGS_NAV_COLORS=Colors & Fonts
+LBL_DLG_SETTINGS_APP_COLORS=Colors
+LBL_DLG_SETTINGS_APP_VTC="Visitor text color:"
+LBL_DLG_SETTINGS_APP_OTC="Operator text color:"
+LBL_DLG_SETTINGS_APP_STC="Service text color:"
+LBL_DLG_SETTINGS_APP_FONTS=Fonts
+LBL_DLG_SETTINGS_APP_VTF="Visitor text font:"
+LBL_DLG_SETTINGS_APP_VTF_S="Visitor message font"
+LBL_DLG_SETTINGS_APP_OTF="Operator text font:"
+LBL_DLG_SETTINGS_APP_OTF_S="Operator message font"
+LBL_DLG_SETTINGS_APP_STF="Service text font:"
+LBL_DLG_SETTINGS_APP_STF_S="Service message font"
+
+; Shortcats
+LBL_DLG_SETTINGS_NAV_SHORTCUTS=Shortcuts
+LBL_DLG_SETTINGS_SC=Shortcuts
+LBL_DLG_SETTINGS_SC_OCD=Open connect dialog
+LBL_DLG_SETTINGS_SC_CC=Close connection
+LBL_DLG_SETTINGS_SC_TVW=Toggle visitors window
+LBL_DLG_SETTINGS_SC_TOMW=Toggle offline messages window
+LBL_DLG_SETTINGS_SC_TSW=Toggle stickers window
+LBL_DLG_SETTINGS_SC_TVTW=Toggle visitors tray window
+LBL_DLG_SETTINGS_SC_OOD=Open options dialog
+LBL_DLG_SETTINGS_SC_TW=Tile windows
+LBL_DLG_SETTINGS_SC_CW=Cascade windows
+LBL_DLG_SETTINGS_SC_CAW=Close active window
+LBL_DLG_SETTINGS_SC_CAllW=Close all windows
+
+; Sounds
+LBL_DLG_SETTINGS_NAV_SOUNDS=Sounds
+LBL_DLG_SETTINGS_SOUNDS=Sounds
+LBL_DLG_SETTINGS_SOUNDS_NW=New visitor
+LBL_DLG_SETTINGS_SOUNDS_WFC=Wait for chat
+LBL_DLG_SETTINGS_SOUNDS_NRM=New reply message
+LBL_DLG_SETTINGS_SOUNDS_NOM=New offline message
+LBL_DLG_SETTINGS_SOUNDS_AV=Away visitor
+
+; Tray
+LBL_DLG_SETTINGS_NAV_TRAY=Tray
+LBL_DLG_SETTINGS_TRAY=Tray
+LBL_DLG_SETTINGS_TRAY_RONW=Raise on new visitor
+LBL_DLG_SETTINGS_TRAY_RONOM=Raise on new offline message
+LBL_DLG_SETTINGS_TRAY_RONM=Raise on new message
+LBL_DLG_SETTINGS_TRAY_ROSWFC=Raise on status "Waiting for chat"
+LBL_DLG_SETTINGS_TRAY_HMWOC=Hide main window on close
+
+; Languages
+LBL_DLG_SETTINGS_NAV_LANGUAGES=Languages
+LBL_DLG_SETTINGS_LANGUAGES=Languages
+LBL_DLG_SETTINGS_LANGUAGES_MEMO1=Select the language
+
+
+;
+; Visitors tree
+;
+LBL_VISITORS_TREE_IDLE=Idle
+LBL_VISITORS_TREE_WAITING_CHAT=Waiting for chat
+LBL_VISITORS_TREE_CHATTING=Chatting
+LBL_VISITORS_TREE_INVITATION_SENT=Invitation sent
+LBL_VISITORS_TREE_INVITATION_DECLINET=Invitation declined
+
+
+;
+; Offline messages
+;
+LBL_DLG_POST_OFFMSGS_TITLE=Offline Message
+LBL_DLG_POST_OFFMSGS_SUBJECT=Subject:
+LBL_DLG_POST_OFFMSGS_VISITOR=Visitor:
+LBL_DLG_POST_OFFMSGS_EMAIL=Email:
+LBL_DLG_POST_OFFMSGS_DATE=Date:
+LBL_DLG_POST_OFFMSGS_REPLIED=Replied:
+LBL_DLG_POST_OFFMSGS_RESPONDENT=Respondent:
+LBL_DLG_POST_OFFMSGS_REPLY_DATE=Reply Date:
+LBL_DLG_POST_OFFMSGS_POST_REPLY=Post Reply
+LBL_DLG_POST_OFFMSGS_MARK_UNREAD=Mark as unread
+
+
+;
+; Please Wait dialog
+;
+LBL_DLG_PLEASE_WAIT_TITLE="Please wait..."
+
+
+;
+; Dialog shortcut
+;
+LBL_DLG_SHORTCUT_TITLE=Enter shortcut
+LBL_DLG_SHORTCUT_SHORTCUT="Shortcut is:"
+LBL_DLG_SHORTCUT_EXISTS="This shortcut already exists"
+
+;
+; Add Sticker
+;
+LBL_DLG_STICKER_ADD_TITLE=Add Sticker
+LBL_DLG_STICKER_ADD_TITLE_L=Title
+LBL_DLG_STICKER_ADD_MESSAGE=Message
+
+LBL_DLG_STICKER_VIEW_TITLE=View Sticker
+LBL_DLG_STICKER_VIEW_TITLE_L=Title:
+LBL_DLG_STICKER_VIEW_AUTHOR=Author:
+LBL_DLG_STICKER_VIEW_DATE=Date:
+LBL_DLG_STICKER_VIEW_MARK_UNREAD=Mark as unread
+
+
+;
+; Rename visitor
+;
+LBL_DLG_RENAME_VISITOR_TITLE=Rename visitor
+LBL_DLG_RENAME_VISITOR_MEMO1="Specify a name for the selected visitor"
+LBL_DLG_RENAME_VISITOR_SET=Set
+
+
+;
+; Visitors Doc
+;
+LBL_BLG_VISITOR_CHAT_TITLE=Chat
+LBL_BLG_VISITOR_DETAILED_INFO_TITLE=Detailed Info
+LBL_BLG_VISITOR_CHAT_HISTORY_TITLE=Chat History
+LBL_BLG_VISITOR_EVENT_LOG_TITLE=Event Log
+LBL_BLG_VISITOR_NOTES_TITLE=Notes
+LBL_BLG_VISITOR_DOWNLOADS_TITLE=Downloads
+
+LBL_DLG_VISITOR_DI_MEMO1="Detailed information about visitor"
+LBL_DLG_VISITOR_DI_IP=IP:
+LBL_DLG_VISITOR_DI_USER_NAME=User name:
+LBL_DLG_VISITOR_DI_STATUS=Status:
+LBL_DLG_VISITOR_DI_OPERATOR=Operator:
+LBL_DLG_VISITOR_DI_BROWSER=Browser:
+LBL_DLG_VISITOR_DI_COUNTRY=Country:
+LBL_DLG_VISITOR_DI_OS=OS:
+LBL_DLG_VISITOR_DI_REFERRER=Referrer:
+LBL_DLG_VISITOR_DI_URL=Current URL:
+LBL_DLG_VISITOR_DI_PAGE_TITLE=Current page title:
+
+LBL_DLG_VISITOR_DI_EL_FROM=FROM:
+LBL_DLG_VISITOR_DI_EL_TO=To:
+LBL_DLG_VISITOR_DI_EL_TITLE=Title:
+
+LBL_DLG_VISITOR_NOTES_ADD=Add Note
+
+LBL_DLG_VISITOR_DOWNLOADS_POST_FILE=Post to Visitor
+
+
+;
+; Messages
+;
+MSG_ERROR="Error"
+MSG_AUTH_FAILED="Authentication failed. Please try again."
+MSG_CONNECTION_ERROR="Connection Error: "
+MSG_CONNECTION_LOST="Connection lost: "
+MSG_INFORMATION="Information"
+MSG_CONNECTION_NOT_SET="Connection not set. Please setup connection first."
+MSG_DISCONNECT="Disconnect"
+MSG_ARE_YOU_SURE="Are you sure?"
+MSG_YES="Yes"
+MSG_NO="No"
+MSG_EMPTY="Empty"
+MSG_CANT_FIND_SHOP="Can not find installed shop with LiveHelp module."                                      
+MSG_SUCCESS="Success"
+MSG_CONNECTION_TEST_OK="Connection test successfully passed."
+MSG_DELETE_CONNECTION="Delete connection"
+MSG_CLEAR_HISTORY="Clear history"
+MSG_CLEAR_HISTORY_TEXT1="Are you sure to clear all Event logs and Chat history?"
+MSG_POST_REPLY="Post Reply"
+MSG_PENDING="Pending"
+MSG_UNKNOWN="Unknown"
+MSG_UPLOADING="Uploading..."
+MSG_ERROR="Error"
+MSG_BYTES="Bytes"
+MSG_DELETE_MESSAGES="Delete message(s)"
+MSG_DELETE_STICKERS="Delete sticker(s)"
+MSG_CLEAR_CHAT_HISTORY="Clear Chat History"
+MSG_CLEAR_EVENT_LOGS="Clear Event Logs"
+MSG_DELETE_NOTE="Delete Note"
+MSG_DELETE_UPLOADED_FILE="Delete Uploaded File"
+MSG_NOT_CONNECTED="Not connected"
+MSG_NOT_CONNECTED_STORE="No connection to the store"
+MSG_FILE_NOT_UPLOADED="File not uploaded to the server"
+MSG_FILE_POST_TO_VISITOR="Post file to the visitor"
+MSG_OPERATOR="Operator"
+MSG_AT_STORE="at store"
+MSG_LOGIN_FAILED="Login failed"
+MSG_ALREADY_AUTHORIZED="Operator with this login is already authorized. Please try again later."
+
+MSG_VISITOR_LOGGED_OFF="Logged off"
+MSG_VISITOR_IDLE="Idle"
+MSG_VISITOR_WAITING_CHAT="Waiting for chat"
+MSG_VISITOR_CHATTING="Chatting"
+MSG_VISITOR_INVITATION_SENT="Invitation sent"
+MSG_VISITOR_INVITATION_DECLINED="Invitation declined"
+MSG_VISITOR_COUNTRY_UNKNOWN="Unknown"
+
+MSG_VISITOR_TEXT_INVITATION_SENT="Invitation to chat has been sent to the visitor, reply is being awaited"
+MSG_VISITOR_TEXT_INVITATION_ACCEPTED="The visitor has accepted invitation"
+MSG_VISITOR_TEXT_INVITATION_DECLINED="The visitor has declined the invitation"
+MSG_VISITOR_TEXT_CHAT_START="Chat session started"
+MSG_VISITOR_TEXT_CHAT_END="Chat session has ended"
+MSG_VISITOR_TEXT_CHAT_LEFT="Visitor '[%VISITOR_OLD_NAME%]' has left the chat session"
+MSG_VISITOR_TEXT_VISITOR_NEW_NAME="Visitor got a new name '[%VISITOR_NEW_NAME%]'"
+
+LBL_EVENT_CHAT_STARTED="Chat Started"
+LBL_EVENT_OPERATOR_JOINED="Operator Joined"
+LBL_EVENT_INVITATION_SENT="Invitation Sent"
+LBL_EVENT_INVITATION_ACCEPTED="Invitation Accepted"
+LBL_EVENT_INVITATION_DECLINED="Invitation Declined"
+LBL_EVENT_PAGE_CHANGED="Page Changed"
+LBL_EVENT_UNKNOWN="Unknown"
+
+

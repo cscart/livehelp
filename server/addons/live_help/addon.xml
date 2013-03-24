@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+	<id>live_help</id>
+	<name>Live Help [Beta]</name>
+	<description>Adds a chat block for online help service</description>
+	<version>1.0</version>
+	<priority>1</priority>
+	<position>160</position>
+	<status>active</status>
+	<translations>
+		<item for="name" lang="ES">Ayuda en línea</item>
+		<item for="name" lang="FR">Aide en direct</item>
+		<item for="name" lang="EL">Live Help </item>
+		<item for="name" lang="RO">Ajutor în timp real</item>
+		<item for="name" lang="RU">Live Help [Бета]</item>
+		<item for="name" lang="SI">Pomoč v živo</item>
+		<item for="description" lang="RU">Добавляет блок с чатом для оказания помощи онлайн</item>
+	</translations>
+	<settings>
+		<sections>
+			<section id="general">
+				<name>General</name>
+				<items>
+					<item id="lh_show_status_image">
+						<name>Show status image</name>
+						<type>checkbox</type>
+						<default_value>Y</default_value>
+						<translations>
+							<item lang="ES">Mostrar imagen de estado</item>
+							<item lang="FR">Afficher image du statut</item>
+							<item lang="DA">Vis status billede</item>
+							<item lang="EL">Προβολή κατάστασης εικόνας</item>
+							<item lang="RO">Afișează statutul imaginii</item>
+							<item lang="RU">Показывать изображение статуса</item>
+							<item lang="SI">Prikaži status slike</item>
+						</translations>
+					</item>
+					<item id="lh_show_operators_num">
+						<name>Show operators number</name>
+						<type>checkbox</type>
+						<default_value>N</default_value>
+						<translations>
+							<item lang="ES">Mostrar número de operador</item>
+							<item lang="FR">Afficher le nombre d'operateurs</item>
+							<item lang="DA">Vis operatører tal</item>
+							<item lang="EL">Προβολή αριθμού φορέων</item>
+							<item lang="RO">Afișează numărul de operatori</item>
+							<item lang="RU">Показывать количество операторов</item>
+							<item lang="SI">Prikaži število operaterjev</item>
+						</translations>
+					</item>
+					<item id="lh_allow_start_chat">
+						<name>Allow to start chat</name>
+						<type>checkbox</type>
+						<default_value>Y</default_value>
+						<translations>
+							<item lang="ES">Permitir empezar chat</item>
+							<item lang="FR">Permettre la debut du chat</item>
+							<item lang="DA">Tillad at starte chat</item>
+							<item lang="EL">Δυνατότητα να ξεκινήσετε συνομιλία</item>
+							<item lang="RO">Permiteți inițierea chat-ului</item>
+							<item lang="RU">Позволять начинать чат</item>
+							<item lang="SI">Dovolite, da začnete klepet</item>
+						</translations>
+					</item>
+					<item id="lh_allow_leave_message">
+						<name>Allow to leave a message</name>
+						<type>checkbox</type>
+						<default_value>Y</default_value>
+						<translations>
+							<item lang="ES">Permitir dejar mensaje</item>
+							<item lang="FR">Prmettre la possibilite de laisser un message</item>
+							<item lang="DA">Tillad at efterlade en besked</item>
+							<item lang="EL">Δυνατότητα να αφήσετε μήνυμα</item>
+							<item lang="RO">Creați posibilitatea de a lăsa un mesaj</item>
+							<item lang="RU">Позволять оставлять сообщения</item>
+							<item lang="SI">Dovolite, da se pusti sporočilo</item>
+						</translations>
+					</item>
+					<item id="lh_visitor_data_keeping_time">
+						<name>Visitor data keeping time (in days)</name>
+						<type>input</type>
+						<default_value>10</default_value>
+						<translations>
+							<item lang="ES">Datos de invitados se conservan X días</item>
+							<item lang="FR">Temps de garde des donnees visiteurs (en jours)</item>
+							<item lang="EL">χρόνος (σε μέρες) αποθυκευμένων δεδομένων του χρήστη</item>
+							<item lang="RO">Timpul de păstrare a datelor cu privire la vizitatori (în zile)</item>
+							<item lang="RU">Время хранения данных посетителя (в днях)</item>
+							<item lang="SI">Vodenje časa obiskov (v dnevih)</item>
+						</translations>
+					</item>
+					<item id="lh_file_keeping_time">
+						<name>Uploaded files keeping time (in minutes)</name>
+						<type>input</type>
+						<default_value>3</default_value>
+						<translations>
+							<item lang="ES">Archivos subidos se conservan X minutos</item>
+							<item lang="FR">Temps de garde des fichiers telecharges (en minutes)</item>
+							<item lang="EL">Ανέβασμα αρχείων κρατώντας χρόνο (σε λεπτά)</item>
+							<item lang="RO">Timpul de păstrate a fișierelor încărcate (în minute)</item>
+							<item lang="RU">Время хранения загруженных файлов (в минутах)</item>
+							<item lang="SI">WČas nalaganja datotek (v minutah)</item>
+						</translations>
+					</item>
+				</items>
+			</section>
+		</sections>
+	</settings>
+	<queries>
+		<item for="demo" type='file'>database/demo.sql</item>
+		<item>DROP TABLE IF EXISTS `?:lh_left_messages`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_messages`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_messages_map`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_operators`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_sessions`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_stickers`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_track`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_type_notify`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_visitors`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_visitors_log`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_visitors_notes`;</item>
+		<item>DROP TABLE IF EXISTS `?:lh_files`;</item>
+		<item>CREATE TABLE `?:lh_left_messages` (   `message_id` mediumint(8) unsigned NOT NULL auto_increment,   `date` int(11) unsigned NOT NULL default '0',   `reply_date` int(11) unsigned NOT NULL default '0',   `from_name` varchar(255) NOT NULL default '',   `from_mail` varchar(64) NOT NULL default '',   `subject` varchar(255) NOT NULL default '',   `message` text NOT NULL,   `operator_id` smallint(8) unsigned NOT NULL default '0',   `operator_name` varchar(64) NOT NULL default '',   `reply` text NOT NULL,   `replied` tinyint(1) unsigned NOT NULL default '0',   PRIMARY KEY  (`message_id`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_messages` (   `message_id` mediumint(8) unsigned NOT NULL auto_increment,   `date` int(11) unsigned NOT NULL default '0',   `direction` tinyint(1) unsigned NOT NULL default '0',   `from_id` mediumint(8) unsigned NOT NULL default '0',   `to_id` mediumint(8) unsigned NOT NULL default '0',   `text` text NOT NULL,   PRIMARY KEY  (`message_id`),   KEY `from_id` (`from_id`),   KEY `to_id` (`to_id`),   KEY `direction` (`direction`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_messages_map` (   `self_id` mediumint(8) unsigned NOT NULL default '0',   `to_id` mediumint(8) unsigned NOT NULL default '0',   `new_messages` mediumint(8) unsigned NOT NULL default '0',   `last_message` mediumint(8) unsigned NOT NULL default '0',   `direction` smallint(5) unsigned NOT NULL default '0',   KEY `to_id` (`to_id`),   KEY `self_id` (`self_id`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_operators` (   `operator_id` mediumint(8) unsigned NOT NULL auto_increment,   `name` varchar(255) NOT NULL default '',   `login` varchar(255) NOT NULL default '',   `password` varchar(255) NOT NULL default '',   `obsolete_time` int(11) unsigned NOT NULL default '0',   `status` char(1) NOT NULL default 'A',   `register_time` int(11) unsigned NOT NULL default '0',   `type_notify` char(1) NOT NULL default 'N',   `last_message` mediumint(8) unsigned NOT NULL default '0',   PRIMARY KEY  (`operator_id`),   KEY `obsolete_time` (`obsolete_time`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_sessions` (   `session_id` mediumint(8) unsigned NOT NULL auto_increment,   `name` varchar(255) NOT NULL default '',   `ip` double NOT NULL default '0',   `time_diff` bigint(11) unsigned NOT NULL default '0',   `start_time` int(11) unsigned NOT NULL default '0',   `obsolete_time` int(11) unsigned NOT NULL default '0',   `last_message` mediumint(8) unsigned NOT NULL default '0',   `readdress` varchar(100) NOT NULL default '0',   `chat_counter` smallint(5) unsigned NOT NULL default '0',   PRIMARY KEY  (`session_id`),   KEY `obsolete_time` (`obsolete_time`),   KEY `ip` (`ip`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_stickers` (   `sticker_id` mediumint(8) unsigned NOT NULL auto_increment,   `operator_id` mediumint(8) unsigned NOT NULL default 0,   `operator_name` varchar(64) NOT NULL default '',   `date` int(11) unsigned NOT NULL,   `title` varchar(255) NOT NULL,   `text` text NOT NULL,   PRIMARY KEY  (`sticker_id`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_track` (   `user_id` mediumint(8) unsigned NOT NULL default '0',   `user_type` char(1) NOT NULL,   `avail` char(1) NOT NULL default 'S',   `track` text NOT NULL,   `chat_track` text NOT NULL ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_type_notify` (   `direction` smallint(5) unsigned NOT NULL default '0',   `self_id` mediumint(8) unsigned NOT NULL default '0',   `to_id` mediumint(8) unsigned NOT NULL default '0',   `flag` smallint(5) unsigned NOT NULL default '0',   KEY `self_id` (`self_id`),   KEY `to_id` (`to_id`),   KEY `type` (`direction`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_visitors` (   `visitor_id` mediumint(8) unsigned NOT NULL auto_increment,   `session_id` varchar(32) NOT NULL default '',   `ip` double NOT NULL default '0',   `start_time` int(11) unsigned NOT NULL default '0',   `obsolete_time` int(11) unsigned NOT NULL default '0',   `obsolete_time_chat` int(11) unsigned NOT NULL default '0',   `status` smallint(5) unsigned NOT NULL default '0',   `operator_id` mediumint(8) NOT NULL default '0',   `assigned_name` varchar(255) NOT NULL default '',   `chat_name` varchar(255) NOT NULL default '',   `chat_counter` smallint(5) unsigned NOT NULL default '0',   `last_message` mediumint(8) unsigned NOT NULL default '0',   `type_notify` char(1) NOT NULL default 'N',   `stat_track` char(1) NOT NULL default 'N',   PRIMARY KEY  (`visitor_id`),   KEY `ip` (`ip`),   KEY `obsolete_time` (`obsolete_time`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_visitors_log` (   `log_id` mediumint(8) unsigned NOT NULL auto_increment,   `visitor_id` mediumint(8) unsigned NOT NULL default '0',   `date` int(11) unsigned NOT NULL default '0',   `event` smallint(5) unsigned NOT NULL default '0',   `operator_id` mediumint(8) unsigned NOT NULL default '0',   `operator_name` varchar(255) NOT NULL default '', `page_url` text NOT NULL default '',  `page_title` text NOT NULL default'',  PRIMARY KEY  (`log_id`),   KEY `visitor_id` (`visitor_id`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_visitors_notes` (   `note_id` mediumint(8) unsigned NOT NULL auto_increment,   `visitor_id` mediumint(8) unsigned NOT NULL default '0',   `date` int(11) unsigned NOT NULL default '0',   `operator_id` mediumint(8) unsigned NOT NULL default '0',   `note` text NOT NULL,   `operator_name` varchar(255) NOT NULL default '',   PRIMARY KEY  (`note_id`),   KEY `visitor_id` (`visitor_id`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item>CREATE TABLE `?:lh_files` (   `file_id` mediumint(8) unsigned NOT NULL auto_increment,   `visitor_id` mediumint(8) unsigned NOT NULL default 0,   `date` int(11) unsigned NOT NULL default '0',  `original_filename` varchar(255) NOT NULL default '',   `size` int(11) unsigned NOT NULL default 0,   `path` text NOT NULL default '',   `filename` text NOT NULL default '',   `operator_id` mediumint(8) unsigned NOT NULL default 0,   `operator_name` varchar(255) NOT NULL default '',   `state` tinyint(1) unsigned NOT NULL default 0,   PRIMARY KEY  (`file_id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;</item>
+		<item table="privilege_descriptions" lang="EN" editions="PROFESSIONAL,MULTIVENDOR,ULTIMATE">REPLACE INTO ?:privilege_descriptions (privilege, description, lang_code, section_id) VALUES ('manage_livehelp', 'Manage Live Help', 'EN', '1');</item>
+		<item table="privilege_descriptions" lang="RU" editions="PROFESSIONAL,MULTIVENDOR,ULTIMATE">REPLACE INTO ?:privilege_descriptions (privilege, description, lang_code, section_id) VALUES ('manage_livehelp', 'Управление модулем Live Help', 'RU', '1');</item>
+		<item editions="PROFESSIONAL,MULTIVENDOR,ULTIMATE">REPLACE INTO ?:privileges (privilege, is_default) VALUES ('manage_livehelp', 'Y');</item>
+		<item for="uninstall" editions="PROFESSIONAL,MULTIVENDOR,ULTIMATE">DELETE FROM ?:privileges WHERE privilege LIKE 'manage_livehelp'</item>
+		<item for="uninstall" editions="PROFESSIONAL,MULTIVENDOR,ULTIMATE">DELETE FROM ?:privilege_descriptions WHERE privilege LIKE 'manage_livehelp'</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_left_messages`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_messages`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_messages_map`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_operators`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_sessions`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_stickers`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_track`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_type_notify`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_visitors`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_visitors_log`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_visitors_notes`;</item>
+		<item for="uninstall">DROP TABLE IF EXISTS `?:lh_files`;</item>
+	</queries>
+	<language_variables>
+		<item lang="EN" id="block_live_help">Live help</item>
+		<item lang="EN" id="block_live_help_description">Online assistance chat</item>
+		<item lang="RU" id="block_live_help">Онлайн помощь</item>
+		<item lang="RU" id="block_live_help_description">Чат онлайн помощи</item>
+	</language_variables>
+</addon>

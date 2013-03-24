@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wDockStickers</class>
+ <widget class="QWidget" name="wDockStickers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="wAllControls" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTreeWidget" name="twStickers">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ExtendedSelection</enum>
+        </property>
+        <property name="rootIsDecorated">
+         <bool>false</bool>
+        </property>
+        <property name="headerHidden">
+         <bool>false</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string comment="LBL_TITLE">Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string comment="LBL_OPERATOR">Operator</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string comment="LBL_DATE">Date</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_Buttons">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pbStickerView">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string comment="LBL_VIEW">View</string>
+          </property>
+          <property name="icon">
+           <iconset resource="lh3.qrc">
+            <normaloff>:/lh3/Resources/read_messages.png</normaloff>:/lh3/Resources/read_messages.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pbStickerAdd">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string comment="LBL_ADD">Add</string>
+          </property>
+          <property name="icon">
+           <iconset resource="lh3.qrc">
+            <normaloff>:/lh3/Resources/sending_message.png</normaloff>:/lh3/Resources/sending_message.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pbStickerDelete">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string comment="LBL_DELETE">Delete</string>
+          </property>
+          <property name="icon">
+           <iconset resource="lh3.qrc">
+            <normaloff>:/lh3/Resources/deleting_message.png</normaloff>:/lh3/Resources/deleting_message.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="lh3.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>twStickers</sender>
+   <signal>itemDoubleClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>wDockStickers</receiver>
+   <slot>itemDoubleClicked(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>-6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>twStickers</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>wDockStickers</receiver>
+   <slot>itemSelectionChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbStickerView</sender>
+   <signal>clicked()</signal>
+   <receiver>wDockStickers</receiver>
+   <slot>ViewRecord()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbStickerAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>wDockStickers</receiver>
+   <slot>AddRecord()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbStickerDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>wDockStickers</receiver>
+   <slot>DeleteRecord()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>itemDoubleClicked(QTreeWidgetItem*,int)</slot>
+  <slot>ViewRecord()</slot>
+  <slot>AddRecord()</slot>
+  <slot>DeleteRecord()</slot>
+  <slot>itemSelectionChanged()</slot>
+ </slots>
+</ui>

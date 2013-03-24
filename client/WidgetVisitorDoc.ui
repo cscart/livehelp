@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiDialogVisitorDoc</class>
+ <widget class="QWidget" name="uiDialogVisitorDoc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>564</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>360</height>
+   </size>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="margin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string/>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::South</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="documentMode">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tabChat">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="title">
+       <string comment="LBL_BLG_VISITOR_CHAT_TITLE">Chat</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTextEdit" name="lwLines">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="leMessage"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbPresetMessage">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/config/Resources/preset_messages.png</normaloff>:/config/Resources/preset_messages.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbSend">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string comment="LBL_SEND">Send</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabDetailedInfo">
+      <property name="styleSheet">
+       <string>/*background: rgb(255, 255, 139)*/</string>
+      </property>
+      <attribute name="title">
+       <string comment="LBL_BLG_VISITOR_DETAILED_INFO_TITLE">Detailed Info</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string comment="LBL_DLG_VISITOR_DI_MEMO1">Detailed information about visitor</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QVisitorInfo" name="twDetailedInfo">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::NoSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>200</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>200</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>ip</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>user_name</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>status</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>operator</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>browser</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>country</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>os</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>referrer</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>current_url</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>page_title</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>1</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_IP">IP:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>234</red>
+             <green>232</green>
+             <blue>229</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="NoBrush">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>192.168.0.32</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_USER_NAME">User name:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>jnemo</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_STATUS">Status:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>Idle</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_OPERATOR">Operator:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>demo</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_BROWSER">Browser:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>Firefox 3.5</string>
+          </property>
+          <property name="icon">
+           <iconset resource="lh3.qrc">
+            <normaloff>:/browsers/Resources/firefox.png</normaloff>:/browsers/Resources/firefox.png</iconset>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_COUNTRY">Country:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>Unknown</string>
+          </property>
+          <property name="icon">
+           <iconset resource="lh3.qrc">
+            <normaloff>:/country/Resources/unknown.png</normaloff>:/country/Resources/unknown.png</iconset>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_OS">OS:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="6" column="1">
+          <property name="text">
+           <string>Linux</string>
+          </property>
+          <property name="icon">
+           <iconset resource="lh3.qrc">
+            <normaloff>:/os/Resources/linux.png</normaloff>:/os/Resources/linux.png</iconset>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_REFERRER">Referrer:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="7" column="1">
+          <property name="text">
+           <string>n/a</string>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_URL">Current URL:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="8" column="1">
+          <property name="text">
+           <string>n/a</string>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="text">
+           <string comment="LBL_DLG_VISITOR_DI_PAGE_TITLE">Current page title:</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>233</red>
+             <green>231</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="9" column="1">
+          <property name="text">
+           <string>Search engine</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabChatHistory">
+      <attribute name="title">
+       <string comment="LBL_BLG_VISITOR_CHAT_HISTORY_TITLE">Chat History</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTableWidgetContext" name="chReport">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>150</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>150</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string comment="LBL_DATE">Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_NAME">Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_TEXT">Text</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="chPageControl">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pbPageFirst">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-skip-backward-16.png</normaloff>:/lh3/Resources/media-skip-backward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbPagePrev">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-seek-backward-16.png</normaloff>:/lh3/Resources/media-seek-backward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lPages">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>1/1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbPageNext">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-seek-forward-16.png</normaloff>:/lh3/Resources/media-seek-forward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbPageLast">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-skip-forward-16.png</normaloff>:/lh3/Resources/media-skip-forward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string comment="LBL_CLEAR_ALL">Clear All</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="chMatchPager">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="chPrevious">
+           <property name="text">
+            <string comment="LBL_LATEST">Latest</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="chLatest">
+           <property name="text">
+            <string comment="LBL_PREVIOUS">Previous</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="chNext">
+           <property name="text">
+            <string comment="LBL_NEXT">Next</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="chSearchControl">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="leSearchString"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbSearch">
+           <property name="text">
+            <string comment="LBL_SEARCH">Search</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::HLine</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabEventLog">
+      <attribute name="title">
+       <string comment="LBL_BLG_VISITOR_EVENT_LOG_TITLE">Event log</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTableWidgetContext" name="twEventLogResult">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>150</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>150</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string comment="LBL_DATE">Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_OPERATOR">Operator</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_EVENT">Event</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pbEventLogFirst">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-skip-backward-16.png</normaloff>:/lh3/Resources/media-skip-backward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbEventLogPrev">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-seek-backward-16.png</normaloff>:/lh3/Resources/media-seek-backward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lEventLogPages">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>1/1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbEventLogNext">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-seek-forward-16.png</normaloff>:/lh3/Resources/media-seek-forward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbEventLogLast">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="lh3.qrc">
+             <normaloff>:/lh3/Resources/media-skip-forward-16.png</normaloff>:/lh3/Resources/media-skip-forward-16.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string comment="LBL_CLEAR_ALL">Clear All</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>5</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QListWidget" name="lwEventLogEvents">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::MultiSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string comment="LBL_DLG_VISITOR_DI_EL_FROM">From:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="deEventLogDateStart">
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+               <property name="date">
+                <date>
+                 <year>2008</year>
+                 <month>1</month>
+                 <day>1</day>
+                </date>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="minimumSize">
+                <size>
+                 <width>15</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string comment="LBL_DLG_VISITOR_DI_EL_TO">To:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="deEventLogDateEnd">
+               <property name="currentSection">
+                <enum>QDateTimeEdit::DaySection</enum>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+               <property name="date">
+                <date>
+                 <year>2008</year>
+                 <month>1</month>
+                 <day>1</day>
+                </date>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string comment="LBL_DLG_VISITOR_DI_EL_TITLE">Title:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="leEventPattern"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pbEventLogSearch">
+               <property name="text">
+                <string comment="LBL_SEARCH">Search</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::HLine</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabNotes">
+      <attribute name="title">
+       <string comment="LBL_BLG_VISITOR_NOTES_TITLE">Notes</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTreeWidgetContext" name="twNotes">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="rootIsDecorated">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="columnCount">
+          <number>5</number>
+         </property>
+         <column>
+          <property name="text">
+           <string comment="LBL_DATE">Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Id</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>OperatorId</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_AUTHOR">Author</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_TEXT">Text</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbNoteDelete">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string comment="LBL_DELETE">Delete</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="ptNote">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>52</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbNoteAdd">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string comment="LBL_DLG_VISITOR_NOTES_ADD">Add Note</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabDownloads">
+      <attribute name="title">
+       <string comment="LBL_BLG_VISITOR_DOWNLOADS_TITLE">Downloads</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QTreeWidget" name="twDownloads">
+         <property name="rootIsDecorated">
+          <bool>false</bool>
+         </property>
+         <property name="columnCount">
+          <number>7</number>
+         </property>
+         <attribute name="headerDefaultSectionSize">
+          <number>120</number>
+         </attribute>
+         <attribute name="headerDefaultSectionSize">
+          <number>120</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string comment="LBL_DATE">Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Id</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>OperatorId</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_STATE_STATE">State</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_OPERATOR">Operator</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_SIZE">Size</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string comment="LBL_FILENAME">Filename</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbDownloadsPost">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string comment="LBL_DLG_VISITOR_DOWNLOADS_POST_FILE">Post to Visitor</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_6">
+           <property name="minimumSize">
+            <size>
+             <width>16</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbDownloadsUpload">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string comment="LBL_UPLOAD">Upload</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbDownloadsDelete">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string comment="LBL_DELETE">Delete</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVisitorInfo</class>
+   <extends>QTableWidget</extends>
+   <header>QVisitorInfo.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QTableWidgetContext</class>
+   <extends>QTableWidget</extends>
+   <header>QTableWidgetContext.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QTreeWidgetContext</class>
+   <extends>QTreeWidget</extends>
+   <header>QTreeWidgetContext.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>leMessage</tabstop>
+  <tabstop>pbSend</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>twDetailedInfo</tabstop>
+ </tabstops>
+ <resources>
+  <include location="lh3.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbSend</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>SendMessage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>556</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leMessage</sender>
+   <signal>returnPressed()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>SendMessage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leMessage</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>MessageTextChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbPresetMessage</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>ShowPresetMessages()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>-10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbSearch</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chSearch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>551</x>
+     <y>320</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbPageFirst</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chPageFirst()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>32</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbPagePrev</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chPagePrev()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbPageNext</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chPageNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbPageLast</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chPageLast()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbEventLogFirst</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elPageFirst()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>16</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbEventLogPrev</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elPagePrev()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbEventLogNext</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elPageNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbEventLogLast</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elPageLast()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>563</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elClearAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chClearAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>552</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leSearchString</sender>
+   <signal>returnPressed()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chSearch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>562</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbEventLogSearch</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elSearch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>550</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>562</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leEventPattern</sender>
+   <signal>returnPressed()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>elSearch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chNext</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>-15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chLatest</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chPrevious</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>chLatest()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>86</x>
+     <y>-10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbNoteAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>noteAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>314</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>566</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbNoteDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>noteDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ptNote</sender>
+   <signal>textChanged()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>noteTextChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>twNotes</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>noteItemSelectionChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbDownloadsDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>downloadsDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>511</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>562</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbDownloadsUpload</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>downloadsUpload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>562</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>twDownloads</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>downloadsItemSelectionChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbDownloadsPost</sender>
+   <signal>clicked()</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>downloadsPostToChat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>322</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>twDownloads</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>uiDialogVisitorDoc</receiver>
+   <slot>downloadContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>saveAction()</slot>
+  <slot>printAction()</slot>
+  <slot>SendMessage()</slot>
+  <slot>MessageTextChanged()</slot>
+  <slot>ShowPresetMessages()</slot>
+  <slot>chSearch()</slot>
+  <slot>chPageFirst()</slot>
+  <slot>chPagePrev()</slot>
+  <slot>chPageNext()</slot>
+  <slot>chPageLast()</slot>
+  <slot>elSearch()</slot>
+  <slot>elPageFirst()</slot>
+  <slot>elPagePrev()</slot>
+  <slot>elPageNext()</slot>
+  <slot>elPageLast()</slot>
+  <slot>elClearAll()</slot>
+  <slot>chClearAll()</slot>
+  <slot>chPrevious()</slot>
+  <slot>chNext()</slot>
+  <slot>chLatest()</slot>
+  <slot>noteAdd()</slot>
+  <slot>noteDelete()</slot>
+  <slot>noteTextChanged()</slot>
+  <slot>noteItemSelectionChanged()</slot>
+  <slot>downloadsDelete()</slot>
+  <slot>downloadsItemSelectionChanged()</slot>
+  <slot>downloadsUpload()</slot>
+  <slot>downloadsPostToChat()</slot>
+  <slot>downloadContextMenu(QPoint)</slot>
+ </slots>
+</ui>

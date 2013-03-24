@@ -1,0 +1,9 @@
+<live_help>
+	<item title="lh_operators" dispatch="operators.manage" />
+	<item title="lh_chat_history" dispatch="chat_history.manage" />
+
+	<side>
+		<item group="visitor_history.manage" title="remove_livehelp_data" href="%INDEX_SCRIPT?dispatch=visitor_history.delete" meta="cm-confirm" />
+	</side>
+
+</live_help>

@@ -1,0 +1,145 @@
+HTML {
+	height: 100%;
+}
+
+BODY {
+	margin: 3px;
+	padding: 3px;
+	margin-top:	3px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	height: 100%;
+}
+
+/**
+ * Login form
+ */
+
+#enter {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+FORM {
+	margin: 0px;
+}
+
+/**
+ * Chatbox
+ */
+
+#chat {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+#chat DIV#message_box, #chat DIV#message_border {
+	position: absolute;
+	top: 5px;
+	bottom: 38px;
+	left: 5px;
+	right: 5px;
+	z-index: 1000;
+	overflow: auto;
+}
+
+#chat DIV#message_box {
+	top: 6px;
+	bottom: 39px;
+	left: 6px;
+	right: 6px;
+}
+
+/* Fuckin IE positioning hack */
+* HTML #chat DIV#message_box {
+	width: expression(document.body.clientWidth - 12);
+	height: expression(document.body.clientHeight - 44);
+}
+* HTML #chat DIV#message_border {
+	width: expression(document.body.clientWidth - 10);
+	height: expression(document.body.clientHeight - 42);
+}
+
+#chat DIV#messages {
+	padding: 5px;
+}
+
+#chat DIV.controls {
+	white-space: nowrap;
+	position: absolute;
+	height: 25px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+}
+
+/* Another IE positioning hack */
+* HTML #chat DIV.controls {
+	width: expression(document.body.clientWidth - 10);
+}
+
+#chat DIV.controls TD {
+	padding: 0px;
+}
+
+#chat DIV.controls TABLE TD.send_button {
+	width: 60px;
+	text-align: center;
+	padding-left: 7px;
+}
+
+#chat INPUT#message_text  {
+	width: 97%;
+}
+
+#chat SPAN#type_notify {
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	padding: 3px;
+	font-weight: bold;
+	z-index: 2000;
+}
+
+/**
+ * Messsages
+ */
+
+SPAN.system_message {
+	color: Blue;
+	font-weight: bold;
+}
+
+SPAN.operator_message {
+	color: Green;
+}
+
+SPAN.self_message {
+	color: Grey;
+}
+
+SPAN.operator_message .name, SPAN.self_message .name {
+	font-weight: bold;
+}
+
+/**
+ * Leave message form
+ */
+
+#leave_message FORM .field_name {
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+#leave_message FORM INPUT {
+	width: 100%;
+}
+
+#leave_message FORM TEXTAREA {
+	width: 100%;
+	height: 100px;
+}

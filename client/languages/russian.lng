@@ -1,0 +1,354 @@
+[Information]
+LanguageName=Русский
+
+[Labels]
+; Common
+LBL_YES=Да
+LBL_NO=Нет
+LBL_CLOSE=Закрыть
+LBL_APPLY=Применить
+LBL_CANCEL=Отмена
+LBL_ASSIGN=Назначить
+LBL_REMOVE=Убрать
+LBL_CREATE=Создать
+LBL_ADD=Добавить
+LBL_DELETE=Удалить
+LBL_VIEW=Просмотр
+LBL_SEND=Отправить
+LBL_CLEAR_ALL=Очистить все
+LBL_LATEST=Последний
+LBL_PREVIOUS=Предыдущий
+LBL_NEXT=Следующий
+LBL_SEARCH=Поиск
+LBL_UPLOAD=Выбрать файл
+
+LBL_TITLE=Заголовок
+LBL_DATE=Дата
+LBL_OPERATOR=Оператор
+LBL_SUBJECT=Тема
+LBL_VISITOR=Посетитель
+LBL_NAME=Имя
+LBL_TEXT=Текст
+LBL_EVENT=Событие
+LBL_AUTHOR=Автор
+LBL_STATE_STATE=Состояние
+LBL_SIZE=Размер
+LBL_FILENAME=Имя файла
+LBL_UPDATING="Обновление..."
+
+LBL_COPY="Копировать"
+
+;
+; Statuses
+;
+LBL_STATUS_IDLE=Незанятый
+LBL_STATUS_WAITING_CHAT=Ожидает чат-сесии
+LBL_STATUS_CHATTING=Чат-сеанс
+LBL_STATUS_INVITATION_SENT=Приглашение отправлено
+LBL_STATUS_INVITATION_DECLINET=Приглашение отклонено
+
+
+; Actions
+LBL_MENU_FILE=Файл
+LBL_ACTION_CONNECT=Соединение
+LBL_ACTION_DISCONNECT=Отсоединение
+LBL_ACTION_EXIT=Выход
+
+LBL_MENU_VIEW=Вид
+LBL_ACTION_VISITORS=Посетители
+LBL_ACTION_WINDOWS=Окна
+LBL_ACTION_OFFLINE_MESSAGES=Сообщения
+LBL_ACTION_STICKERS=Стикеры
+LBL_ACTION_SETTINGS=Настройки
+
+LBL_MENU_WINDOW=Окно
+LBL_ACTION_CASCADE=Каскад
+LBL_ACTION_TILE=Плитка
+LBL_ACTION_CLOSE_ALL=Закрыть все
+LBL_ACTION_CLOSE_ACTIVE=Закрыть активное
+
+LBL_MENU_HELP=Помощь
+LBL_ACTION_ABOUT=О программе Live Help
+
+LBL_ACTION_OPEN_VISITOR=Открыть посетителя
+LBL_ACTION_ASSIGN_NAME=Переименовать посетителя
+LBL_ACTION_RESTORE=Восстановить
+
+
+;
+; Dockers
+;
+LBL_DOCK_VISITORS_TITLE=Посетители
+LBL_DOCK_OFFLINE_MESSAGES_TITLE=Сообщения
+LBL_DOCK_STICKERS_TITLE=Стикеры
+LBL_DOCK_WINDOWS_TITLE=Открытые посетители
+
+;
+; dialog About
+;
+LBL_DLG_ABOUT_TITLE=О программе Live Help 3.0
+
+;
+; dialog Connection
+;
+LBL_DLG_CONNECT_TITLE=Соединение с магазином
+LBL_DLG_CONNECT_INFORMATION=Введите логин и пароль для соединения с магазином
+LBL_DLG_CONNECT_LOGIN=Логин
+LBL_DLG_CONNECT_PASSWORD=Пароль
+LBL_DLG_CONNECT_STORE=Магазин
+LBL_DLG_CONNECT_CONNECT=Соединить
+LBL_DLG_CONNECT_CANCEL=Отмена
+
+
+;
+; dialog Settings
+;
+LBL_DLG_SETTINGS_TITLE=Настройки
+
+; Connection
+LBL_DLG_SETTINGS_NAV_CONNECTION=Соединение
+LBL_DLG_SETTINGS_CONN_CONNECTION=Соединение
+LBL_DLG_SETTINGS_CONN_STORE_URL=URL магазина
+LBL_DLG_SETTINGS_CONN_LABEL1=* Укажите путь к вашему установленному магазину в виде:\nhttp://server:port/path/index.php
+LBL_DLG_SETTINGS_CONN_STORE_ALIAS=Имя магазина
+LBL_DLG_SETTINGS_CONN_HTTP_AUTH=HTTP Аутентификация
+LBL_DLG_SETTINGS_CONN_HTTP_NAME=Логин
+LBL_DLG_SETTINGS_CONN_HTTP_PASS=Пароль
+LBL_DLG_SETTINGS_CONN_PROXY=Прокси
+LBL_DLG_SETTINGS_CONN_ADDR=HTTP Прокси
+LBL_DLG_SETTINGS_CONN_PORT=Порт
+LBL_DLG_SETTINGS_CONN_USER=Логин
+LBL_DLG_SETTINGS_CONN_PASS=Пароль
+LBL_DLG_SETTINGS_CONN_ADD=Добавить соединение
+LBL_DLG_SETTINGS_CONN_DELETE=Удалить соединение
+LBL_DLG_SETTINGS_CONN_TEST=Проверить соединение
+
+; Preset messages
+LBL_DLG_SETTINGS_NAV_PRESET_MSGS=Шаблоны
+LBL_DLG_SETTINGS_PRE_ADD=Добавить
+LBL_DLG_SETTINGS_PRE_DEL=Удалить
+LBL_DLG_SETTINGS_PRE_MEMO1=* Можно использовать специальные слова:
+LBL_DLG_SETTINGS_PRE_MEMO2=[%NAME%] - имя собеседника по чату
+LBL_DLG_SETTINGS_PRE_MEMO3=[%DATE%] - текущая дата
+LBL_DLG_SETTINGS_PRE_MEMO4=[%TIME%] - текущее время
+
+; History
+LBL_DLG_SETTINGS_NAV_HISTORY=История
+LBL_DLG_SETTINGS_HISTORY=История
+LBL_DLG_SETTINGS_HIST_MEMO1="Время, в течении которого хранить историю (в днях):"
+LBL_DLG_SETTINGS_HIST_MEMO2="* Укажите значение, равное 0, чтобы отключить очистку старых сообщений"
+LBL_DLG_SETTINGS_HIST_MEMO3="Нажмите на кнопку ниже, чтобы очистить все сообщения:"
+LBL_DLG_SETTINGS_HIST_CLEAR=Очистить историю
+
+; Colors & Settings
+LBL_DLG_SETTINGS_NAV_COLORS=Цвета и шрифты
+LBL_DLG_SETTINGS_APP_COLORS=Цвета
+LBL_DLG_SETTINGS_APP_VTC="Цвет текста посетителя:"
+LBL_DLG_SETTINGS_APP_OTC="Цвет текста оператора:"
+LBL_DLG_SETTINGS_APP_STC="Цвет сервисных сообщений:"
+LBL_DLG_SETTINGS_APP_FONTS=Шрифты
+LBL_DLG_SETTINGS_APP_VTF="Шрифт текста посетителя:"
+LBL_DLG_SETTINGS_APP_VTF_S="Шрифт текста посетителя"
+LBL_DLG_SETTINGS_APP_OTF="Шрифт текста оператора:"
+LBL_DLG_SETTINGS_APP_OTF_S="Шрифт текста оператора"
+LBL_DLG_SETTINGS_APP_STF="Шрифт сервисных сообщений:"
+LBL_DLG_SETTINGS_APP_STF_S="Шрифт сервисных сообщений"
+
+; Shortcuts
+LBL_DLG_SETTINGS_NAV_SHORTCUTS=Гор. клавиши
+LBL_DLG_SETTINGS_SC=Горячие клавиши
+LBL_DLG_SETTINGS_SC_OCD=Открыть диалог соединения
+LBL_DLG_SETTINGS_SC_CC=Закрыть соединение
+LBL_DLG_SETTINGS_SC_TVW=Октрыть/Закрыть окно посетителей
+LBL_DLG_SETTINGS_SC_TOMW=Открыть/Закрыть окно сообщений
+LBL_DLG_SETTINGS_SC_TSW=Открыть/Закрыть окно стикеров
+LBL_DLG_SETTINGS_SC_TVTW=Открыть/Закрыть трэй посетителей
+LBL_DLG_SETTINGS_SC_OOD=Открыть окно опций
+LBL_DLG_SETTINGS_SC_TW=Упорядочить плиткой
+LBL_DLG_SETTINGS_SC_CW=Упорядочить каскадом
+LBL_DLG_SETTINGS_SC_CAW=Закрыть активное окно
+LBL_DLG_SETTINGS_SC_CAllW=Закрыть все окна
+
+; Sounds
+LBL_DLG_SETTINGS_NAV_SOUNDS=Звуки
+LBL_DLG_SETTINGS_SOUNDS=Звуки
+LBL_DLG_SETTINGS_SOUNDS_NW=Новый посетитель
+LBL_DLG_SETTINGS_SOUNDS_WFC=Посетитель ожидает чат-сессии
+LBL_DLG_SETTINGS_SOUNDS_NRM=Новое чат-сообщение
+LBL_DLG_SETTINGS_SOUNDS_NOM=Новое сообщение
+LBL_DLG_SETTINGS_SOUNDS_AV=Визитор покинул магазин
+
+; Tray
+LBL_DLG_SETTINGS_NAV_TRAY=Трэй
+LBL_DLG_SETTINGS_TRAY=Трэй
+LBL_DLG_SETTINGS_TRAY_RONW=Восстновить при появлении нового посетителя
+LBL_DLG_SETTINGS_TRAY_RONOM=Восстновить при появлении нового сообщения
+LBL_DLG_SETTINGS_TRAY_RONM=Восстновить при появлении нового чат-сообщения
+LBL_DLG_SETTINGS_TRAY_ROSWFC=Восстновить если посетитель ожидает начало чат-сессии
+LBL_DLG_SETTINGS_TRAY_HMWOC=Сворачивать в трэй при закрытии программы
+
+; Languages
+LBL_DLG_SETTINGS_NAV_LANGUAGES=Языки
+LBL_DLG_SETTINGS_LANGUAGES=Языки
+LBL_DLG_SETTINGS_LANGUAGES_MEMO1=Выберите язык
+
+
+;
+; Visitors tree
+;
+LBL_VISITORS_TREE_IDLE=Посетители
+LBL_VISITORS_TREE_WAITING_CHAT=Ожидают чат
+LBL_VISITORS_TREE_CHATTING=Чат-сеансы
+LBL_VISITORS_TREE_INVITATION_SENT=Отправлено
+LBL_VISITORS_TREE_INVITATION_DECLINET=Отклонено
+
+
+;
+; Offline messages
+;
+LBL_DLG_POST_OFFMSGS_TITLE=Сообщение
+LBL_DLG_POST_OFFMSGS_SUBJECT=Тема:
+LBL_DLG_POST_OFFMSGS_VISITOR=Посетитель:
+LBL_DLG_POST_OFFMSGS_EMAIL=Email:
+LBL_DLG_POST_OFFMSGS_DATE=Дата:
+LBL_DLG_POST_OFFMSGS_REPLIED=Отвечено:
+LBL_DLG_POST_OFFMSGS_RESPONDENT=Ответивший:
+LBL_DLG_POST_OFFMSGS_REPLY_DATE=Дата ответа:
+LBL_DLG_POST_OFFMSGS_POST_REPLY=Отправить
+LBL_DLG_POST_OFFMSGS_MARK_UNREAD=Пометить как не прочитанное
+
+
+;
+; Please Wait dialog
+;
+LBL_DLG_PLEASE_WAIT_TITLE="Пожалуйста, подождите..."
+
+
+;
+; Dialog shortcut
+;
+LBL_DLG_SHORTCUT_TITLE=Введите горячую клавишу
+LBL_DLG_SHORTCUT_SHORTCUT="Клавиша:"
+LBL_DLG_SHORTCUT_EXISTS="Горячая клавиша уже существует"
+
+;
+; Add Sticker
+;
+LBL_DLG_STICKER_ADD_TITLE=Добавить стикер
+LBL_DLG_STICKER_ADD_TITLE_L=Заголовок
+LBL_DLG_STICKER_ADD_MESSAGE=Сообщение
+
+LBL_DLG_STICKER_VIEW_TITLE=Стикер
+LBL_DLG_STICKER_VIEW_TITLE_L=Заголовок:
+LBL_DLG_STICKER_VIEW_AUTHOR=Автор:
+LBL_DLG_STICKER_VIEW_DATE=Дата:
+LBL_DLG_STICKER_VIEW_MARK_UNREAD=Пометить как не прочитанный
+
+
+;
+; Rename visitor
+;
+LBL_DLG_RENAME_VISITOR_TITLE=Переименовать посетителя
+LBL_DLG_RENAME_VISITOR_MEMO1="Задайте имя выбранному посетителю"
+LBL_DLG_RENAME_VISITOR_SET=Применить
+
+
+;
+; Visitors Doc
+;
+LBL_BLG_VISITOR_CHAT_TITLE=Чат
+LBL_BLG_VISITOR_DETAILED_INFO_TITLE=Информация
+LBL_BLG_VISITOR_CHAT_HISTORY_TITLE=Чат-история
+LBL_BLG_VISITOR_EVENT_LOG_TITLE=История событий
+LBL_BLG_VISITOR_NOTES_TITLE=Заметки
+LBL_BLG_VISITOR_DOWNLOADS_TITLE=Закачки
+
+LBL_DLG_VISITOR_DI_MEMO1="Детальная информация о посетителе"
+LBL_DLG_VISITOR_DI_IP=IP:
+LBL_DLG_VISITOR_DI_USER_NAME=Имя:
+LBL_DLG_VISITOR_DI_STATUS=Статус:
+LBL_DLG_VISITOR_DI_OPERATOR=Оператор:
+LBL_DLG_VISITOR_DI_BROWSER=Браузер:
+LBL_DLG_VISITOR_DI_COUNTRY=Страна:
+LBL_DLG_VISITOR_DI_OS=Операционная система:
+LBL_DLG_VISITOR_DI_REFERRER=Откуда пришел:
+LBL_DLG_VISITOR_DI_URL=Текущий URL:
+LBL_DLG_VISITOR_DI_PAGE_TITLE=Заголовок текущей страницы:
+
+LBL_DLG_VISITOR_DI_EL_FROM=Начало:
+LBL_DLG_VISITOR_DI_EL_TO=Окончание:
+LBL_DLG_VISITOR_DI_EL_TITLE=Содержимое:
+
+LBL_DLG_VISITOR_NOTES_ADD=Добавить
+
+LBL_DLG_VISITOR_DOWNLOADS_POST_FILE=Отправить в чат
+
+
+;
+; Messages
+;
+MSG_ERROR="Ошибка"
+MSG_AUTH_FAILED="Ошибка аутентификации. Пожалуйста, попробуйте еще раз."
+MSG_CONNECTION_ERROR="Ошибка при подключении: "
+MSG_CONNECTION_LOST="Подключение прервано: "
+MSG_INFORMATION="Информация"
+MSG_CONNECTION_NOT_SET="Соединение не установлено. Пожалуйста, настройте параметры соединения."
+MSG_DISCONNECT="Разорвать соединение"
+MSG_ARE_YOU_SURE="Вы уверены?"
+MSG_YES="Да"
+MSG_NO="Нет"
+MSG_EMPTY="Нет"
+MSG_CANT_FIND_SHOP="Не удается найти магазин с установленным LiveHelp модулем."
+MSG_SUCCESS="Успех"
+MSG_CONNECTION_TEST_OK="Тестовое соединение выполнено успешно."
+MSG_DELETE_CONNECTION="Удалить соединение"
+MSG_CLEAR_HISTORY="Очистить историю"
+MSG_CLEAR_HISTORY_TEXT1="Вы уверены, что хотите очистить всю историю событий и чат-сообщений?"
+MSG_POST_REPLY="Отправить ответ"
+MSG_PENDING="В процессе"
+MSG_UNKNOWN="Неизвестно"
+MSG_UPLOADING="Отправка..."
+MSG_ERROR="Ошибка"
+MSG_BYTES="Байт"
+MSG_DELETE_MESSAGES="Удалить сообщение(я)"
+MSG_DELETE_STICKERS="Удалить стикер(ы)"
+MSG_CLEAR_CHAT_HISTORY="Очистить чат-историю"
+MSG_CLEAR_EVENT_LOGS="Очистить историю событий"
+MSG_DELETE_NOTE="Удалить заметку"
+MSG_DELETE_UPLOADED_FILE="Удалить отправленный файл"
+MSG_NOT_CONNECTED="Нет соединения"
+MSG_NOT_CONNECTED_STORE="Соединение с магазином отсутствует"
+MSG_FILE_NOT_UPLOADED="В данный момент файл не загружен на сервер"
+MSG_FILE_POST_TO_VISITOR="Отправить файл посетителю"
+MSG_OPERATOR="Оператор"
+MSG_AT_STORE="в магазине"
+MSG_LOGIN_FAILED="Авторизация не удалась"
+MSG_ALREADY_AUTHORIZED="Оператор с данным логином уже авторизовался в системе. Пожалуйста, повторите попытку позже."
+
+MSG_VISITOR_LOGGED_OFF="Отсоединен"
+MSG_VISITOR_IDLE="Незанятый"
+MSG_VISITOR_WAITING_CHAT="Ожидает чат-сессии"
+MSG_VISITOR_CHATTING="Чат-сеанс"
+MSG_VISITOR_INVITATION_SENT="Приглашение отправлено"
+MSG_VISITOR_INVITATION_DECLINED="Приглашение отклонено"
+MSG_VISITOR_COUNTRY_UNKNOWN="Неизвестно"
+
+MSG_VISITOR_TEXT_INVITATION_SENT="Приглашение к чату отправлено посетителю, ожидается ответ"
+MSG_VISITOR_TEXT_INVITATION_ACCEPTED="Посетитель принял приглашение к чату"
+MSG_VISITOR_TEXT_INVITATION_DECLINED="Посетитель отклонил приглашение к чату"
+MSG_VISITOR_TEXT_CHAT_START="Посетитель начал чат"
+MSG_VISITOR_TEXT_CHAT_END="Сеанс чата завершен"
+MSG_VISITOR_TEXT_CHAT_LEFT="Посетитель '[%VISITOR_OLD_NAME%]' покинул чат"
+MSG_VISITOR_TEXT_VISITOR_NEW_NAME="Посетитель получил новое имя '[%VISITOR_NEW_NAME%]'"
+
+
+LBL_EVENT_CHAT_STARTED="Открытие чат-сессии"
+LBL_EVENT_OPERATOR_JOINED="Оператор присоединился"
+LBL_EVENT_INVITATION_SENT="Приглашение отправлено"
+LBL_EVENT_INVITATION_ACCEPTED="Приглашение принято"
+LBL_EVENT_INVITATION_DECLINED="Приглашение отклонено"
+LBL_EVENT_PAGE_CHANGED="Переход на страницу"
+LBL_EVENT_UNKNOWN="Неизвестно"
+
+
+

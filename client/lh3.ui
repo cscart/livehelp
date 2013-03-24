@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>lh3Class</class>
+ <widget class="QMainWindow" name="lh3Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>729</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>lh3</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="lh3.qrc">
+    <normaloff>:/lh3/Resources/lh_icon.png</normaloff>:/lh3/Resources/lh_icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="LayoutVisitorsMDI">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>729</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string comment="LBL_MENU_FILE">File</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string comment="LBL_MENU_VIEW">View</string>
+    </property>
+    <addaction name="actionVisitors"/>
+    <addaction name="actionWindows"/>
+    <addaction name="actionOffline_Messages"/>
+    <addaction name="actionStickers"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string comment="LBL_MENU_WINDOW">Window</string>
+    </property>
+    <addaction name="actionCascade"/>
+    <addaction name="actionTile"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose_All"/>
+    <addaction name="actionClose_Active"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string comment="LBL_MENU_HELP">Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar_Connection">
+   <property name="windowTitle">
+    <string>Connection</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnect"/>
+   <addaction name="actionDisconnect"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetVisitors">
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string comment="LBL_DOCK_VISITORS_TITLE">Visitors</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="LayoutVisitorsTree">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_VisitorsTray">
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string comment="LBL_DOCK_WINDOWS_TITLE">Windows</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="widget_VisitorsTray_Root">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <property name="margin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="widget_VisitorsTray_List">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string>background: rgb(255, 255, 255)</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetOfflineMessages">
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string comment="LBL_DOCK_OFFLINE_MESSAGES_TITLE">Offline messages</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QVBoxLayout" name="LayoutOfflineMessages">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetStickers">
+   <property name="windowTitle">
+    <string comment="LBL_DOCK_STICKERS_TITLE">Stickers</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QVBoxLayout" name="LayoutStickers">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/connect.png</normaloff>:/lh3/Resources/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_CONNECT">Connect</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/disconnect.PNG</normaloff>:/lh3/Resources/disconnect.PNG</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_DISCONNECT">Disconnect</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/exit.png</normaloff>:/lh3/Resources/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_EXIT">Exit</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/designer-resource-tool.png</normaloff>:/lh3/Resources/designer-resource-tool.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_SETTINGS">Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionVisitors">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/visitorsdock.png</normaloff>:/lh3/Resources/visitorsdock.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_VISITORS">Visitors</string>
+   </property>
+  </action>
+  <action name="actionCascade">
+   <property name="text">
+    <string comment="LBL_ACTION_CASCADE">Cascade</string>
+   </property>
+  </action>
+  <action name="actionTile">
+   <property name="text">
+    <string comment="LBL_ACTION_TILE">Tile</string>
+   </property>
+  </action>
+  <action name="actionWindows">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/profiles.png</normaloff>:/lh3/Resources/profiles.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_WINDOWS">Windows</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string comment="LBL_ACTION_ABOUT">About Live Help</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string comment="LBL_ACTION_CLOSE_ALL">Close All</string>
+   </property>
+  </action>
+  <action name="actionClose_Active">
+   <property name="text">
+    <string comment="LBL_ACTION_CLOSE_ACTIVE">Close Active</string>
+   </property>
+  </action>
+  <action name="actionOpen_Visitor">
+   <property name="text">
+    <string comment="LBL_ACTION_OPEN_VISITOR">Open Visitor</string>
+   </property>
+  </action>
+  <action name="actionClose_Visitor">
+   <property name="text">
+    <string>Close Visitor</string>
+   </property>
+  </action>
+  <action name="actionAssign_Visitor_Name">
+   <property name="text">
+    <string comment="LBL_ACTION_ASSIGN_NAME">Assign Visitor Name</string>
+   </property>
+  </action>
+  <action name="actionRestore">
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/lh_icon.png</normaloff>:/lh3/Resources/lh_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_RESTORE">Restore</string>
+   </property>
+  </action>
+  <action name="actionOffline_Messages">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/offlinemessagesdock.png</normaloff>:/lh3/Resources/offlinemessagesdock.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_OFFLINE_MESSAGES">Offline Messages</string>
+   </property>
+  </action>
+  <action name="actionStickers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="lh3.qrc">
+     <normaloff>:/lh3/Resources/sticker_unread.png</normaloff>:/lh3/Resources/sticker_unread.png</iconset>
+   </property>
+   <property name="text">
+    <string comment="LBL_ACTION_STICKERS">Stickers</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="lh3.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>activated()</signal>
+   <receiver>lh3Class</receiver>
+   <slot>showAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>activated()</signal>
+   <receiver>lh3Class</receiver>
+   <slot>ForceExit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionVisitors</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>dockWidgetVisitors</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dockWidgetVisitors</sender>
+   <signal>visibilityChanged(bool)</signal>
+   <receiver>actionVisitors</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConnect</sender>
+   <signal>activated()</signal>
+   <receiver>lh3Class</receiver>
+   <slot>Connect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lh3Class</sender>
+   <signal>setConnected(bool)</signal>
+   <receiver>actionDisconnect</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lh3Class</sender>
+   <signal>setConnected(bool)</signal>
+   <receiver>actionConnect</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDisconnect</sender>
+   <signal>activated()</signal>
+   <receiver>lh3Class</receiver>
+   <slot>Disconnect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionWindows</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>dockWidget_VisitorsTray</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>622</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSettings</sender>
+   <signal>activated()</signal>
+   <receiver>lh3Class</receiver>
+   <slot>execConfig()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRestore</sender>
+   <signal>activated()</signal>
+   <receiver>lh3Class</receiver>
+   <slot>showMaximized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOffline_Messages</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>dockWidgetOfflineMessages</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStickers</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>dockWidgetStickers</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>403</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>setConnected(bool)</signal>
+  <slot>showAbout()</slot>
+  <slot>Connect()</slot>
+  <slot>Disconnect()</slot>
+  <slot>stickerCreate()</slot>
+  <slot>stickerView()</slot>
+  <slot>offlineMsgView()</slot>
+  <slot>offlineMsgReply()</slot>
+  <slot>execConfig()</slot>
+  <slot>ViewMessage()</slot>
+  <slot>DeleteMessage()</slot>
+  <slot>ViewSticker()</slot>
+  <slot>AddSticker()</slot>
+  <slot>DeleteSticker()</slot>
+  <slot>ForceExit()</slot>
+ </slots>
+</ui>
